@@ -1,0 +1,41 @@
+.thisDayWeather {
+    max-width: 600px;
+    box-shadow: 10px 10px 10px 10px rgba(180, 180, 180, 0.25);
+    font-size: 35px;
+    border-radius: 20px;
+    margin-right: 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.top-block {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 20px;
+}
+
+.top-block svg {
+    height: 120px;
+    width: 120px;
+}
+.currentTemp {
+    font-size: 90px;
+    font-weight: 500;
+}
+
+.currentDay {
+    font-size: 40px;
+}
+
+.bottom-block {
+    font-size: 25px;
+    color: gray;
+    padding: 10px 20px;
+}
+.currentPlace {
+    font-size: 14px;
+}

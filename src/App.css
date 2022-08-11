@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;700;900&display=swap');
+
+.wrapper_dayWeather {
+    display: flex;
+    justify-content: space-between;
+}
+
+.App {
+    text-align: center;
+    max-width: 1200;
+    margin: 0 auto;
+  }
+
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  .wrapper_header {
+    display: flex;
+    align-items: center;
+  }
+
+  .search input {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: grey;
+  }
+
+  ::placeholder {
+    color: white;
+  }
