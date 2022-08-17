@@ -10,12 +10,12 @@ export const GlobalSvgSelector = ({ icon }: Props) => {
   switch (icon) {
     case '01n' :
       return (
-        <img src='https://img.icons8.com/stickers/100/000000/partly-cloudy-day.png' alt=''></img>
+        <img src='http://openweathermap.org/img/wn/01n@2x.png' alt=''></img>
       );
     
     case '01d' :
       return (
-        <img src='https://img.icons8.com/stickers/100/000000/partly-cloudy-day.png' alt=''></img>
+        <img src='http://openweathermap.org/img/wn/01d@2x.png' alt=''></img>
       );
 
     case '02d' :

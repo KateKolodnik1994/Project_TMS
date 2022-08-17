@@ -15,10 +15,19 @@
     width: 100%;
 }
 
-.currentTemp, .currentDay {
-    font-size: 25px;
+.currentTemp {
+    font-size: 20px;
     font-weight: 500;
     padding-top: 20px;
+}
+
+.currentDay {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px;
+}
+.currentDay span, .currentTemp span {
+    text-decoration: underline;
 }
 
 .currentCondition {
@@ -38,3 +47,11 @@
     height: 50px;
     width: 50px;
 }
+
+.cards_wrapper {
+    justify-content: space-around;
+    font-size: 10px;
+    min-width: 300px;
+    text-align: center;
+}
+

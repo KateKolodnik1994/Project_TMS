@@ -3,7 +3,6 @@
     box-shadow: 10px 10px 10px 10px rgba(180, 180, 180, 0.25);
     border-radius: 20px;
     box-sizing: border-box;
-    margin-bottom: 30px;
 }
 
 .top-block {
@@ -11,24 +10,27 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 30px;
     width: 100%;
-    padding: 20px;
+    padding: 0px;
 }
 
-.currentTemp {
+.currentTemp, .time {
     font-size: 25px;
     font-weight: 500;
     padding-top: 20px;
 }
-
+.time {
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 20px;;
+}
 .currentCondition {
     font-size: 20px;
     padding-top: 20px;
 }
 
 .bottom-block {
-    font-size: 25px;
+    font-size: 15px;
     color: gray;
     padding: 10px 20px;
 }
@@ -42,6 +44,20 @@
 .currentIcon img {
     margin: 0 auto;
     align-items: center;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.wrapper-topBlock {
+    min-width: 300px;
+    text-align: center;
+}
+
+.currentIcon {
+    justify-content: center;
+    align-items: center;
+}
+

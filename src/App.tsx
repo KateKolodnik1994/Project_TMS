@@ -24,40 +24,36 @@ export function App() {
   );
 
   return (
-    <BrowserRouter>
-    <Container>
-      <div className='main_container'>
+    <div className='wrapper'>
+      <div className='container'>
       <div className='title'> Weather APP </div>
-    <div className='text'> Enter Your Location: </div>
-    <Formik
-                initialValues={{
-                    location: ''
-                }}
-                onSubmit={(values) => {
-                    dispatch(fetchCurrentWeather(values.location));
-                    console.log(values.location)
-                    dispatch(fetchUpcomingWeather(values.location));
-                    console.log(values.location)
-                }}
-              >
-                <Form className='search-bar' noValidate>
+      <div className='text'> Enter Your Location: </div>
+      <Formik
+        initialValues={{
+          location: ''
+        }}
+        onSubmit={(values) => {
+          dispatch(fetchCurrentWeather(values.location), );
+          console.log(values.location)
+          dispatch(fetchUpcomingWeather(values.location));
+          console.log(values.location)
+        }}>
+        <Form className='search-bar' noValidate>
                   <div className='search_wrapper'>
                   <label htmlFor="location"></label>
                     <Field id="location" name="location" placeholder='City' />
                     <button type="submit" className='s-icon' > <TbSearch />  </button>
                   </div>
-                </Form>
-</Formik>
-    <div className='wrapper_dayWeather'>
-      <ThisDayWeather todayWeather={todayWeather} />
+        </Form>
+      </Formik>
+        <div className='wrapper_dayWeather'>
+          <ThisDayWeather todayWeather={todayWeather} />
+        </div>
+        <div className='wrapper_weatherForHours'>
+          <FiveDaysWeather upcomingWeather={upcomingWeather} />
+        </div>
     </div>
-    <div className='wrapper_fewDaysWeather'>
-      {/* <Days /> */}
-      <FiveDaysWeather upcomingWeather={upcomingWeather} />
     </div>
-      </div>
-    </Container>
-    </BrowserRouter>
   );
 }
 

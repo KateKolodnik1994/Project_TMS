@@ -22,7 +22,9 @@ const initialState: UpcomingWeather = {
         name: '',
       },
       list: [{
-        dt_txt: '',
+        clouds: {
+          dt_txt: '',
+        },
         main: {
           temp: 0,
           feels_like: 0,

@@ -14,7 +14,9 @@ export type Upcoming_weather = {
     name: string,
   },
   list: [{
-    dt_txt: string,
+    clouds: {
+      dt_txt: string,
+    }
     main: {
       temp: number,
       feels_like: number,

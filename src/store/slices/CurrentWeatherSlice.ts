@@ -15,7 +15,10 @@ type Response = {
 
 const initialState: CurrentWeather = {
   todayWeather: {
-    main: {},
+    main: {
+      temp: 0,
+      feels_like: 0,
+    },
     name: '',
     dt_txt: '',
     weather: [{
