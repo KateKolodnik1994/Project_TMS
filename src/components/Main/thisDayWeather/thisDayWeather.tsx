@@ -2,32 +2,21 @@ import './thisDayWeather.css';
 import { GlobalSvgSelector } from '../../../assets/images/icons/iconsSvgSelector';
 import React from 'react';
 
-
-type Weather = {
-    main: {
-      temp: number;
-      feels_like: number;
-    };
-    name: string;
-  };
-
-interface Props {
-    weather: Weather;
-  }
-  const ThisDayWeather = ({weather}: Props) => {
+const ThisDayWeather = ({todayWeather}: any) => {
     const newLocal = 'thisDayWeather';
   return (
     <div className={newLocal}>
         <div className='top-block'>
             <div className='wrapper-topBlock'>
-                <div className='currentTemp'>{Math.floor(weather.main.temp)}°</div>
-                <div className='currentDay'>{}</div>
+                <div className='currentIcon'>
+                  <GlobalSvgSelector icon = {todayWeather.weather[0].icon}/>
+                </div>
+                <div className='currentTemp'>Temperature Now: {Math.floor(todayWeather.main.temp)}°C</div>
+                <div className='currentTemp'>Feels Like: {Math.floor(todayWeather.main.feels_like)}°C</div>
+                <div className='currentTemp'>Weather Condition: {todayWeather.weather[0].main}</div>
+                <div className='currentTemp'>Current Location: {todayWeather.name}</div>
+                {/* <div className='currentDay'>{Math.floor(todayWeather.wind.speed)} м/с</div> */}
             </div>
-            <GlobalSvgSelector id = 'sun'/>
-        </div>
-        <div className='bottom-block'>
-            <div className='currentTime'>Время: <span>13.23</span></div>
-            <div className='currentPlace'>{weather.name}</div>
         </div>
     </div>
   )

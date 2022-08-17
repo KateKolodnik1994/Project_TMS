@@ -1,4 +1,4 @@
-.thisDayWeather {
+.upcomingWeather {
     width: 100%;
     box-shadow: 10px 10px 10px 10px rgba(180, 180, 180, 0.25);
     border-radius: 20px;
@@ -6,17 +6,16 @@
     margin-bottom: 30px;
 }
 
-.top-block {
+.cardWrapper {
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 30px;
     width: 100%;
-    padding: 20px;
 }
 
-.currentTemp {
+.currentTemp, .currentDay {
     font-size: 25px;
     font-weight: 500;
     padding-top: 20px;
@@ -38,10 +37,4 @@
 .weather_icon {
     height: 50px;
     width: 50px;
-}
-.currentIcon img {
-    margin: 0 auto;
-    align-items: center;
-    height: 200px;
-    width: 200px;
 }
